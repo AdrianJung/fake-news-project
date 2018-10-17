@@ -1,0 +1,9 @@
+
+body {
+	height: 100vh;
+	width: 100%;
+	background-color:lightgray;
+}
+.card1 {
+	padding: 20px;
+}

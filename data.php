@@ -10,15 +10,21 @@ $data = [
 		['id' => 4, 'name' => 'Blabla Blablasson'],
 		['id' => 5, 'name' => 'Benjamin Fransson']
 	],
+];
+
+$article = [
 	'news' => [
-		['title' => 'Lorem', 'content' => 'ipsum', 'publishedDate' => date(), 'likeCounter' => 5, 'author' => 1],
-		['title' => 'Lorem', 'content' => 'ipsum', 'publishedDate' => date(), 'likeCounter' => 5, 'author' => 2],
-		['title' => 'Lorem', 'content' => 'ipsum', 'publishedDate' => date(), 'likeCounter' => 5, 'author' => 3],
-		['title' => 'Lorem', 'content' => 'ipsum', 'publishedDate' => date(), 'likeCounter' => 5, 'author' => 4],
-		['title' => 'Lorem', 'content' => 'ipsum', 'publishedDate' => date(), 'likeCounter' => 5, 'author' => 5],
+		['title' => 'Lorem', 'content' => 'ipsum', 'publishedDate' => date('Y'), 'likeCounter' => 5, 'author' => 1],
+		['title' => 'Lorem', 'content' => 'ipsum', 'publishedDate' => date('Y'), 'likeCounter' => 5, 'author' => 2],
+		['title' => 'Lorem', 'content' => 'ipsum', 'publishedDate' => date('Y'), 'likeCounter' => 5, 'author' => 3],
+		['title' => 'Lorem', 'content' => 'ipsum', 'publishedDate' => date('Y'), 'likeCounter' => 5, 'author' => 4],
+		['title' => 'Lorem', 'content' => 'ipsum', 'publishedDate' => date('Y'), 'likeCounter' => 5, 'author' => 5],
 	]
 ];
 
+/*
+gör en separat array för news
+ */
 /**
  * Ska lagras:
  *
