@@ -18,6 +18,10 @@ require __DIR__.'/functions.php';
 	<title></title>
 </head>
 <body>
+	<div class="jumbotron">
+	  <h1 class="display-1">f4k3 n3ws</h1>
+	  <p class="lead">The following news articles are not real</p>
+	</div>
 	<div class="container">
 		<div class="row">
 			<?php foreach ($articles as $article):?>
