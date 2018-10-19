@@ -20,13 +20,13 @@ require __DIR__.'/functions.php';
 </head>
 <body>
 	<div class="jumbotron">
-	  <h1 class="display-1">f4k3 n3ws</h1>
-	  <p class="lead">The following news articles are not real</p>
+		<h1 class="display-1">f4k3 n3ws</h1>
+		<p class="lead">The following news articles are not real</p>
 	</div>
 	<div class="container">
 		<div class="row">
 			<?php usort($articles, 'sortByDate');?>
-			<?php foreach ($articles as $article):?>
+			<?php foreach (array_reverse($articles) as $article):?>
 				<?php for ($i=0; $i < count($authors); $i++):?>
 					<?php if ($authors[$i]['author_id'] === $article['id']):?>
 						<div class="col-12 p-4">
@@ -37,12 +37,18 @@ require __DIR__.'/functions.php';
 						<div class="card-body">
 							<h5 class="card-title"><?= $article['title']?></h5>
 							<p class="card-text"><?= $article['content']?></p>
-							<p><?= "Published: " . $article['date'];?></p>
-							<div class="d-flex justify-content-end">
-							<button type="button" class="btn btn-dark">
-								<span class="fas fa-thumbs-up"></span>
-								<span class"likes"><?=$article['likeCounter']?></span>
-								</button>
+							<div>
+								<div class="row">
+									<div class="col">
+										<p><?= "Published: " . $article['date'];?></p>
+									</div>
+									<div class="col d-flex justify-content-end">
+										<button type="button" onclick="buttonFunction()" class="btn btn-dark">
+											<span class="fas fa-thumbs-up"></span>
+											<span class"likes"><?=$article['likeCounter']?></span>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
