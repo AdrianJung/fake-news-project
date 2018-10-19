@@ -4,3 +4,10 @@
 .lead {
 	text-align: center;
 }
+
+.jumbotron {
+background-color: white;
+}
+.align-bottom {
+	text-align:right;
+}
