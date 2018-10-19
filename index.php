@@ -25,6 +25,7 @@ require __DIR__.'/functions.php';
 	</div>
 	<div class="container">
 		<div class="row">
+			<?php usort($articles, 'sortByDate');?>
 			<?php foreach ($articles as $article):?>
 				<?php for ($i=0; $i < count($authors); $i++):?>
 					<?php if ($authors[$i]['author_id'] === $article['id']):?>
@@ -36,6 +37,7 @@ require __DIR__.'/functions.php';
 						<div class="card-body">
 							<h5 class="card-title"><?= $article['title']?></h5>
 							<p class="card-text"><?= $article['content']?></p>
+							<p><?= "Published: " . $article['date'];?></p>
 							<div class="d-flex justify-content-end">
 							<button type="button" class="btn btn-dark">
 								<span class="fas fa-thumbs-up"></span>

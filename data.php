@@ -13,13 +13,13 @@ $articles = [
 		['id' => 1,
 		 'title' => 'This title',
 		 'content' => file_get_contents(__DIR__.'/content/article1.txt'),
-		 'date' => '2018-08-01',
+		 'date' => '2018-08-21',
 		 'likeCounter' => 1],
 
 		['id' => 2,
 		 'title' => 'That title',
 		 'content' => file_get_contents(__DIR__.'/content/article2.txt'),
-		 'Date' => '2018-08-02',
+		 'date' => '2018-08-12',
 		 'likeCounter' => 2],
 
 		['id' => 4,
@@ -37,13 +37,13 @@ $articles = [
 		['id' => 5,
 		 'title' => 'TITLE',
 		 'content' => file_get_contents(__DIR__.'/content/article5.txt'),
-		 'date' => '2018-08-05',
+		 'date' => '2018-08-15',
 		 'likeCounter' => 5],
 
 		['id' => 4,
 		 'title' => 'The most interesting article',
      'content' => file_get_contents(__DIR__.'/content/article6.txt'),
-		 'date' => '2018-08-06',
+		 'date' => '2018-08-13',
 		 'likeCounter' => 6],
 
 		['id' => 1,
