@@ -18,10 +18,6 @@ require __DIR__.'/functions.php';
 	<title></title>
 </head>
 <body>
-	<?php if (isset($_GET['sort'])){
-		$sort = ($_GET['sort']);
-	}
-	?>
 	<div class="jumbotron">
 		<h1 class="display-1">Fake News</h1>
 		<h4 class="display-4">Authors</h4>

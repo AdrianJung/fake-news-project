@@ -40,15 +40,15 @@ require __DIR__.'/functions.php';
 		<div class="row">
 			<!-- function that sorts articles by date -->
 			<?php usort($articles, 'sortByDate');?>
-			<?php if (isset($_GET['sortbyauthor'])){
-				 $articles = selectByAuthor($articles, $_GET['sortbyauthor']);
-			}
-			?>
+			<!-- -->
+			<?php if (isset($_GET['sortbyauthor'])):?>
+			<?php $articles = sortByAuthor($articles, $_GET['sortbyauthor']);?>
+			<?php endif;?>
 			<!-- loops trough the articles array also reverses the order so the latest articles show at the top -->
 			<?php foreach (array_reverse($articles) as $article):?>
 				<!-- Counts through the authors array and prints articles for each author in the array if the author id matches the article id -->
 				<?php for ($i=0; $i < count($authors); $i++):?>
-					<?php if ($authors[$i]['author_id'] === $article['id']):?>
+					<?php if ($authors[$i]['author_id'] === $article['author_id']):?>
 						<div class="col-12 p-4">
 							<div class="card text-white bg-dark">
 								<div class="card-header p-4"><h4><?=$authors[$i]['name']?></h4></div>
