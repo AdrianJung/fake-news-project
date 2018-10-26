@@ -9,5 +9,14 @@
 background-color: white;
 }
 .align-bottom {
-	text-align:right;
+	text-align: right;
+}
+
+.display-4 {
+	text-align: center;
+}
+
+.jumbotron {
+	padding-top: 20;
+	padding-bottom: 0;
 }

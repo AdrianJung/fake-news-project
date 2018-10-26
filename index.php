@@ -19,14 +19,34 @@ require __DIR__.'/functions.php';
 	<title></title>
 </head>
 <body>
+	<!-- Header -->
 	<div class="jumbotron">
-		<h1 class="display-1">f4k3 n3ws</h1>
-		<p class="lead">The following news articles are not real</p>
+		<h1 class="display-1">Fake News</h1>
 	</div>
+	<!-- Buttons -->
+	<div class="row">
+		<div class="col-5"></div>
+		<div class="col-3">
+	<a type="button" class="btn btn-dark" href="index.php">
+		<span>Home</span>
+	</a>
+	<a type="button" class="btn btn-dark" href="authorpage.php">
+		<span>Authors</span>
+	</a>
+	</div>
+</div>
+<!-- Article Container -->
 	<div class="container">
 		<div class="row">
+			<!-- function that sorts articles by date -->
 			<?php usort($articles, 'sortByDate');?>
+			<?php if (isset($_GET['sortbyauthor'])){
+				 $articles = selectByAuthor($articles, $_GET['sortbyauthor']);
+			}
+			?>
+			<!-- loops trough the articles array also reverses the order so the latest articles show at the top -->
 			<?php foreach (array_reverse($articles) as $article):?>
+				<!-- Counts through the authors array and prints articles for each author in the array if the author id matches the article id -->
 				<?php for ($i=0; $i < count($authors); $i++):?>
 					<?php if ($authors[$i]['author_id'] === $article['id']):?>
 						<div class="col-12 p-4">
@@ -43,7 +63,9 @@ require __DIR__.'/functions.php';
 										<p><?= "Published: " . $article['date'];?></p>
 									</div>
 									<div class="col d-flex justify-content-end">
-										<button type="button" onclick="buttonFunction()" class="btn btn-dark">
+										<!-- Button with thumbs up icon that is display the likecounter from the array -->
+										<button id ="likeButton" type="button" onclick="buttonFunction()" class="btn btn-dark">
+											<!-- thumbs up logo -->
 											<span class="fas fa-thumbs-up"></span>
 											<span class"likes"><?=$article['likeCounter']?></span>
 										</button>

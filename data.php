@@ -1,11 +1,11 @@
 <?php
 
 $authors = [
-		['author_id' => 1, 'name' => 'Harry Potter'],
-		['author_id' => 2, 'name' => 'Ron Weasley'],
-		['author_id' => 3, 'name' => 'Albus Dumbledore'],
-		['author_id' => 4, 'name' => 'Severus Snape'],
-		['author_id' => 5, 'name' => 'Hermione Granger'],
+		['author_id' => 1, 'name' => 'Kalle'],
+		['author_id' => 2, 'name' => 'Peter'],
+		['author_id' => 3, 'name' => 'Nisse'],
+		['author_id' => 4, 'name' => 'Hasse'],
+		['author_id' => 5, 'name' => 'Bob'],
 ];
 
 
