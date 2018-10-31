@@ -16,6 +16,7 @@ Open index.php at your local server, ex localhost:8888
 * PHP
 * HTML
 * CSS
+* Bootstrap
 
 ## Contributing
 
