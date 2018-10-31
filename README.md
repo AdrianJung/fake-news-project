@@ -18,8 +18,6 @@ Open index.php at your local server, ex localhost:8888
 * CSS
 * Bootstrap
 
-## Contributing
-
 
 ## Authors
 
