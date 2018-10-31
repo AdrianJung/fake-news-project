@@ -58,7 +58,7 @@ require __DIR__.'/functions.php';
 										<p><?= "Published: " . $article['date'];?></p>
 									</div>
 									<div class="col d-flex justify-content-end">
-										<!-- Button with thumbs up icon that is display the like_counter from the array -->
+										<!-- Button with thumbs up icon that is display the like_counter from the array, Not working -->
 										<button id ="likeButton" type="button" class="btn btn-dark">
 											<!-- thumbs up logo -->
 											<span class="fas fa-thumbs-up"></span>
