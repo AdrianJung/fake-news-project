@@ -1,12 +1,7 @@
 <?php
-
 declare(strict_types=1);
-
 require __DIR__.'/data.php';
-
 require __DIR__.'/functions.php';
-
-
 ?>
 
 <!DOCTYPE html>
@@ -63,11 +58,11 @@ require __DIR__.'/functions.php';
 										<p><?= "Published: " . $article['date'];?></p>
 									</div>
 									<div class="col d-flex justify-content-end">
-										<!-- Button with thumbs up icon that is display the likecounter from the array -->
+										<!-- Button with thumbs up icon that is display the like_counter from the array -->
 										<button id ="likeButton" type="button" onclick="buttonFunction()" class="btn btn-dark">
 											<!-- thumbs up logo -->
 											<span class="fas fa-thumbs-up"></span>
-											<span class"likes"><?=$article['likeCounter']?></span>
+											<span class"likes"><?=$article['like_counter']?></span>
 										</button>
 									</div>
 								</div>
