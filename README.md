@@ -8,8 +8,8 @@ for example MAMP
 
 ### Installing
 
-Clone or Fork the repository
-Open index.php at your local server, ex localhost:8888
+Clone or Fork the repository,
+open index.php at your local server.
 
 ## Built With
 
