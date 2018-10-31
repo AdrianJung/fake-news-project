@@ -59,7 +59,7 @@ require __DIR__.'/functions.php';
 									</div>
 									<div class="col d-flex justify-content-end">
 										<!-- Button with thumbs up icon that is display the like_counter from the array -->
-										<button id ="likeButton" type="button" onclick="buttonFunction()" class="btn btn-dark">
+										<button id ="likeButton" type="button" class="btn btn-dark">
 											<!-- thumbs up logo -->
 											<span class="fas fa-thumbs-up"></span>
 											<span class"likes"><?=$article['like_counter']?></span>
