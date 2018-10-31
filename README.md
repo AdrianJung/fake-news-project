@@ -1,5 +1,5 @@
 # fake-news-project
-Making a news feed in php
+Making a news feed mainly using php
 
 ### Prerequisites
 
