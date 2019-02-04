@@ -33,7 +33,7 @@ require __DIR__.'/functions.php';
 <!-- Article Container -->
 	<div class="container">
 		<div class="row">
-			<!-- function that sorts articles by date -->
+			<!-- Function that sorts articles by date -->
 			<?php usort($articles, 'sortByDate');?>
 			<!-- -->
 			<?php if (isset($_GET['sortbyauthor'])):?>
@@ -49,6 +49,7 @@ require __DIR__.'/functions.php';
 								<div class="card-header p-4"><h4><?=$authors[$i]['name']?></h4></div>
 							<?php endif; ?>
 						<?php endfor; ?>
+						<!--Card body -->
 						<div class="card-body">
 							<h5 class="card-title"><?= $article['title']?></h5>
 							<p class="card-text"><?= $article['content']?></p>
@@ -60,7 +61,7 @@ require __DIR__.'/functions.php';
 									<div class="col d-flex justify-content-end">
 										<!-- Button with thumbs up icon that is display the like_counter from the array, Not working -->
 										<button id ="likeButton" type="button" class="btn btn-dark">
-											<!-- thumbs up logo -->
+											<!-- Thumbs up logo -->
 											<span class="fas fa-thumbs-up"></span>
 											<span class"likes"><?=$article['like_counter']?></span>
 										</button>

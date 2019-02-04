@@ -30,8 +30,8 @@ require __DIR__.'/functions.php';
 						<form method="get" action="index.php">
 							<div class="card text-white bg-dark">
 								<!-- button with value of each author id from the array -->
-							<button type="submit" name="sortbyauthor" value="<?=$author['author_id']?>">
-							<div class="card-header p-4"><h4><?=$author['name']?></h4></div>
+							<button type="submit" class="btn btn-dark" name="sortbyauthor" value="<?=$author['author_id']?>">
+							<div class="card-header"><h4><?=$author['name']?></h4></div>
 					</form>
 				</button>
 					</div>
