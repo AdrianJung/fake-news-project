@@ -1,3 +1,5 @@
+<img src="https://github.styleci.io/repos/153416446/shield?branch=master">
+
 # fake-news-project
 Making a news feed mainly using php
 
